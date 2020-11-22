@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashionloock</title>
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header class="banner">
+        <h2>Estetica Karina's</h2>
+        <div class="textos-header">
+            <h1>Salon de Belleza</h1>
+            <p><em>Estilo para tu cabello, estilo para tu vida</em></p>
+        </div>
+    </header>
+
+    <div id="nav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#marcador1">Experiencia</a></li>
+                <li><a href="#marcador2">Servicios</a></li>
+                <li><a href="#marcador3">Testimonios</a></li>
+                <li><a href="#marcador4">Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id="menubtn">
+        <img src="./imagenes/menu.svg" id="menu"> 
+    </div>
+
+    <script>
+    var menubtn = document.getElementById("menubtn")
+    var nav = document.getElementById("nav")
+    var menu = document.getElementById("menu")
+
+    nav.style.right = "-250px";
+
+
+    menubtn.onclick = function(){
+        if(nav.style.right == "-250px"){
+            nav.style.right = "0";
+            menu.src = "./imagenes/cancel.svg";
+        }
+        else{
+            nav.style.right = "-250px";
+            menu.src = "./imagenes/menu.svg";
+        }
+    }
+    </script>
+
+
+<section class="features" id="marcador1">
+    <div class="logo">
+        <img src="./imagenes/hoja.svg" class="logo-exp">
+        <p><em>Bienvenidos</em></p>
+    </div>
+    <h2>Mi Experiencia</h2>
+</section>
+
+
+<section class="experiencia">
+    <div class="textos-exp">
+        <div class="cursos">
+            <h3><img src="./imagenes/tijeras.svg" id="logo">Preparacion</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur exercitationem quidem itaque rem ea dignissimos et officia, dolores praesentium numquam molestiae reprehenderit quas quae.</p>
+        </div>
+        <div class="cursos" id="cursos">
+            <h3><img src="./imagenes/silla.svg" id="logo">Experiencia</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur exercitationem quidem itaque rem ea dignissimos et officia, dolores praesentium numquam molestiae reprehenderit quas quae.</p>
+        </div>
+        <div class="cursos" id="cursos">
+            <h3><img src="./imagenes/navaja.svg" id="logo">Extras</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius tenetur exercitationem quidem itaque rem ea dignissimos et officia, dolores praesentium numquam molestiae reprehenderit quas quae.</p>
+        </div>
+    </div>
+    <div class="img">
+        <img src="./imagenes/img-experence.jpg" alt="">
+    </div>
+</section>
+
+
+<section class="features" id="marcador2">
+    <div class="logo">
+        <img src="./imagenes/hoja.svg" class="logo-exp">
+         <p><em>Bienvenidos</em></p>
+     </div>
+    <h2>Servicios que ofrezco</h2>
+</section>
+
+
+<section class="portafolio">
+    <div class="contenedor">
+        <div class="galeria">
+            <div class="imagen">
+                <img src="./imagenes/mi-trabajo1.jpg" alt="">
+                <div class="hover">
+                    <p><em>Tintes,Bases y mas.. !</em></p>
+                </div>
+            </div>
+            <div class="imagen">
+             <img src="./imagenes/mi-trabajo3.jpg.jpg" alt="">
+             <div class="hover">
+                 <p><em>Cortes de cabello!</em></p>
+             </div>
+         </div>
+         <div class="imagen">
+            <img src="./imagenes/mi-trabajo1.jpg4.jpg" alt="">
+             <div class="hover">
+                 <p><em>Degrafilados !</em></p>
+             </div>
+         </div>
+         <div class="imagen">
+            <img src="./imagenes/mi-trabajo2.jpg.jpg" alt="">
+            <div class="hover">
+                <p><em>Peinados !</em></p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+<section class="features" id="marcador3">
+    <div class="logo">
+        <img src="./imagenes/hoja.svg" class="logo-exp">
+         <p><em>Bienvenidos</em></p>
+     </div>
+    <h2>Referencia de Clientes</h2>
+</section>
+
+
+<section class="clientes">
+    <div class="card1">
+        <img src="./imagenes/clients1.jpg.jpg" alt="">
+        <p>exapmle@gmail.com</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro dignissimos maiores doloremque sapiente delectus dicta!</p>
+    </div>
+    <div class="card1">
+        <img src="./imagenes/clients2.jpg.jpg" alt="">
+        <p>exapmle@gmail.com</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro dignissimos maiores doloremque sapiente delectus dicta!</p>
+    </div>
+    <div class="card1">
+        <img src="./imagenes/clients3.jpg" alt="">
+        <p>exapmle@gmail.com</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro dignissimos maiores doloremque sapiente delectus dicta!</p>
+    </div>
+</section>
+
+<footer class="footer" id="marcador4">
+    <section class="features" id="features">
+        <div class="logo">
+            <img src="./imagenes/hoja.svg" class="logo-exp">
+             <p><em>Bienvenidos</em></p>
+         </div>
+        <h2>Contactame</h2>
+    </section>  
+
+    <div class="social-media">
+        <div class="contacto">
+            <img src="./imagenes/whatsapp.svg" alt="">
+            <p>Phone</p> <br>
+            <p>55-1526 3796</p>
+        </div>
+        <div class="contacto">
+            <img src="./imagenes/location-byn.svg" alt="">
+            <p>Location</p> <br>
+            <p>Av. Primer #155, CDMX.</p>
+        </div>
+        <div class="contacto">
+            <img src="./imagenes/wall-clock.svg" alt="">
+            <p>Horarios</p> <br>
+            <p>L-A de 9 a.m. a 6 p.m.</p>
+        </div>
+    </div>
+    <div class="svg-social">
+        <a href="#"><img src="./imagenes/facebook.svg" class="svg"></a>
+        <a href="#"><img src="./imagenes/youtube.svg" class="svg"></a>
+        <a href="#"><img src="./imagenes/instagram.svg" class="svg"></a>
+    </div>
+    <h2>CDMX / 2020 / Estetica Karina's </h2>
+</footer>
+</body>
+</html>
